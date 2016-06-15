@@ -11,13 +11,13 @@
 <meta property="og:url" content="http://yoursite.com/2015/03/03/random-color/index.html">
 <meta property="og:site_name" content="Clearives的博客">
 <meta property="og:description" content="在做web开发时，也行我们经常会遇到一些特效问题，不能说这种需求好，也不能说不好,只能说好人所好，就像随机文字颜色，随机背景颜色等等，随机随机吗，当然不是人为去写固定的，而是让系统随机生成，我们知道网页里用的基本上就是 16进制颜色形式 和 RGB颜色形式，所以今天这里将讨论两种形式的JS实现颜色随机代码。">
+<meta property="og:image" content="http://7othoq.com1.z0.glb.clouddn.com/randomcolor.gif">
 <meta property="og:image" content="http://yoursite.com/images/randomcolor.gif">
-<meta property="og:image" content="http://yoursite.com/images/randomcolor.gif">
-<meta property="og:updated_time" content="2016-04-05T15:26:11.000Z">
+<meta property="og:updated_time" content="2016-06-15T08:11:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="随机颜色获取">
 <meta name="twitter:description" content="在做web开发时，也行我们经常会遇到一些特效问题，不能说这种需求好，也不能说不好,只能说好人所好，就像随机文字颜色，随机背景颜色等等，随机随机吗，当然不是人为去写固定的，而是让系统随机生成，我们知道网页里用的基本上就是 16进制颜色形式 和 RGB颜色形式，所以今天这里将讨论两种形式的JS实现颜色随机代码。">
-<meta name="twitter:image" content="http://yoursite.com/images/randomcolor.gif">
+<meta name="twitter:image" content="http://7othoq.com1.z0.glb.clouddn.com/randomcolor.gif">
   
     <link rel="alternative" href="/atom.xml" title="Clearives的博客" type="application/atom+xml">
   
@@ -231,7 +231,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/images/randomcolor.gif" alt="随机颜色" title="随机颜色"><br>在做web开发时，也行我们经常会遇到一些特效问题，不能说这种需求好，也不能说不好,只能说好人所好，就像随机文字颜色，随机背景颜色等等，随机随机吗，当然不是人为去写固定的，而是让系统随机生成，我们知道网页里用的基本上就是 <strong>16进制颜色形式</strong> 和 <strong>RGB颜色形式</strong>，所以今天这里将讨论两种形式的JS实现颜色随机代码。</p>
+        <p><img src="http://7othoq.com1.z0.glb.clouddn.com/randomcolor.gif" alt="随机颜色" title="随机颜色"><br>在做web开发时，也行我们经常会遇到一些特效问题，不能说这种需求好，也不能说不好,只能说好人所好，就像随机文字颜色，随机背景颜色等等，随机随机吗，当然不是人为去写固定的，而是让系统随机生成，我们知道网页里用的基本上就是 <strong>16进制颜色形式</strong> 和 <strong>RGB颜色形式</strong>，所以今天这里将讨论两种形式的JS实现颜色随机代码。</p>
 <a id="more"></a>
 <h4 id="16进制形式"><a href="#16进制形式" class="headerlink" title="16进制形式"></a>16进制形式</h4><figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function randomColor()&#123;</span><br><span class="line">    var arr = []</span><br><span class="line">    i =<span class="number">0</span><span class="comment">;</span></span><br><span class="line">    C = <span class="string">'0123456789ABCDEF'</span><span class="comment">;</span></span><br><span class="line">    <span class="keyword">while</span>(i++ &lt; <span class="number">6</span>)&#123;</span><br><span class="line">        x=Math.random()*<span class="number">16</span><span class="comment">;</span></span><br><span class="line">        b=parseInt(x)<span class="comment">;</span></span><br><span class="line">        c=C.substr(b,<span class="number">1</span>)<span class="comment">;</span></span><br><span class="line">        arr.push(c)<span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">    var <span class="keyword">color</span> = <span class="string">"#"</span>+ arr.join(<span class="string">''</span>)<span class="comment">;</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">color</span><span class="comment">;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="RGB形式"><a href="#RGB形式" class="headerlink" title="RGB形式"></a>RGB形式</h4><figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">randomColor</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">var</span> r = <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*<span class="number">255</span>);</span><br><span class="line">    <span class="built_in">var</span> g = <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*<span class="number">255</span>);</span><br><span class="line">    <span class="built_in">var</span> b = <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*<span class="number">255</span>);</span><br><span class="line">    <span class="built_in">var</span> <span class="built_in">color</span> = <span class="string">'rgb('</span>+r+<span class="string">','</span>+g+<span class="string">','</span>+b+<span class="string">')'</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">color</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -315,7 +315,7 @@
     		&copy; 2016 Clearives
     	</div>
       	<div class="footer-right">
-      		基于<a href="http://hexo.io/" target="_blank">Hexo</a> 构建，托管于<a href="https://github.com/Clearives" target="_blank">Github</a> by <a href="http://www.2ives.com/" target="_blank">Clearives</a>
+      		基于<a href="http://hexo.io/" target="_blank">Hexo</a> 构建，代码托管于<a href="https://github.com/Clearives" target="_blank">Github</a>图片托管于<a href="https://portal.qiniu.com" target="_blank">七牛云存储</a> by <a href="http://blog.2ives.com/" target="_blank">Clearives</a>
       	</div>
     </div>
   </div>

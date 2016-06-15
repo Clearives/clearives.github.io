@@ -11,12 +11,12 @@
 <meta property="og:url" content="http://yoursite.com/2015/03/05/drag/index.html">
 <meta property="og:site_name" content="Clearives的博客">
 <meta property="og:description" content="Javascript的特点是dom的处理与网页效果，大多数情况我们只用到了这个语言的最简单的功能，比如制作图片轮播/网页的tab等等，下面我们要说一个简单拖拽的实现．拖拽的应用场景其实很多，比如说QQ空间中，点编辑，然后那些组件都可以随意拖拽，别的大大小小的应用也挺多，相信大家都看得到，网页上实现拖拽其实也不是很复杂，第一你需要知道鼠标坐标，第二你需要知道用户鼠标点击一个网页元素并实现拖拽，最后我">
-<meta property="og:image" content="http://yoursite.com/images/drag.gif">
-<meta property="og:updated_time" content="2016-04-05T15:26:11.000Z">
+<meta property="og:image" content="http://7othoq.com1.z0.glb.clouddn.com/drag.gif">
+<meta property="og:updated_time" content="2016-06-15T08:10:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单拖拽的实现">
 <meta name="twitter:description" content="Javascript的特点是dom的处理与网页效果，大多数情况我们只用到了这个语言的最简单的功能，比如制作图片轮播/网页的tab等等，下面我们要说一个简单拖拽的实现．拖拽的应用场景其实很多，比如说QQ空间中，点编辑，然后那些组件都可以随意拖拽，别的大大小小的应用也挺多，相信大家都看得到，网页上实现拖拽其实也不是很复杂，第一你需要知道鼠标坐标，第二你需要知道用户鼠标点击一个网页元素并实现拖拽，最后我">
-<meta name="twitter:image" content="http://yoursite.com/images/drag.gif">
+<meta name="twitter:image" content="http://7othoq.com1.z0.glb.clouddn.com/drag.gif">
   
     <link rel="alternative" href="/atom.xml" title="Clearives的博客" type="application/atom+xml">
   
@@ -230,7 +230,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/images/drag.gif" alt="简单拖拽" title="简单拖拽"><br>Javascript的特点是dom的处理与网页效果，大多数情况我们只用到了这个语言的最简单的功能，比如制作图片轮播/网页的tab等等，下面我们要说一个简单拖拽的实现．拖拽的应用场景其实很多，比如说QQ空间中，点编辑，然后那些组件都可以随意拖拽，别的大大小小的应用也挺多，相信大家都看得到，网页上实现拖拽其实也不是很复杂，第一你需要知道鼠标坐标，第二你需要知道用户鼠标点击一个网页元素并实现拖拽，最后我们要实现移动这个元素。</p>
+        <p><img src="http://7othoq.com1.z0.glb.clouddn.com/drag.gif" alt="简单拖拽" title="简单拖拽"><br>Javascript的特点是dom的处理与网页效果，大多数情况我们只用到了这个语言的最简单的功能，比如制作图片轮播/网页的tab等等，下面我们要说一个简单拖拽的实现．拖拽的应用场景其实很多，比如说QQ空间中，点编辑，然后那些组件都可以随意拖拽，别的大大小小的应用也挺多，相信大家都看得到，网页上实现拖拽其实也不是很复杂，第一你需要知道鼠标坐标，第二你需要知道用户鼠标点击一个网页元素并实现拖拽，最后我们要实现移动这个元素。</p>
 <a id="more"></a>
 <h3 id="获取拖拽元素"><a href="#获取拖拽元素" class="headerlink" title="获取拖拽元素"></a>获取拖拽元素</h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br></pre></td></tr></table></figure>
 <h3 id="鼠标按下（mousedown）"><a href="#鼠标按下（mousedown）" class="headerlink" title="鼠标按下（mousedown）"></a>鼠标按下（mousedown）</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">box.addEventListener('mousedown', </span>function (e) &#123;</span><br><span class="line">            var e = e<span class="title">||</span>window.event<span class="comment">;</span></span><br><span class="line">            <span class="keyword">disX </span>= e.clientX - <span class="keyword">box.offsetLeft;</span><br><span class="line"></span>            <span class="keyword">disY </span>= e.clientY - <span class="keyword">box.offsetTop;</span><br><span class="line"></span>            isDrag = true<span class="comment">;</span></span><br><span class="line">            console.log(<span class="keyword">disX+'..'+ </span><span class="keyword">disY);</span><br><span class="line"></span>        &#125;)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
@@ -315,7 +315,7 @@
     		&copy; 2016 Clearives
     	</div>
       	<div class="footer-right">
-      		基于<a href="http://hexo.io/" target="_blank">Hexo</a> 构建，托管于<a href="https://github.com/Clearives" target="_blank">Github</a> by <a href="http://www.2ives.com/" target="_blank">Clearives</a>
+      		基于<a href="http://hexo.io/" target="_blank">Hexo</a> 构建，代码托管于<a href="https://github.com/Clearives" target="_blank">Github</a>图片托管于<a href="https://portal.qiniu.com" target="_blank">七牛云存储</a> by <a href="http://blog.2ives.com/" target="_blank">Clearives</a>
       	</div>
     </div>
   </div>
