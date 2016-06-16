@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>流式布局中的百分比 | Clearives的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="曾经的表格布局可能大家都有点陌生了吧，其实我也是基本上没用过，自从web2.0的兴起，网站重构的思想，这让表格布局就这样消失了基本上，表格布局中有用到百分比布局的，在“表格布局”落下帷幕之后，基本上我们都是让网页固定为950-1000px，。如果布局使用了百分比宽度（如90%），耳边很快就能听到抱怨：“我的显示器上效果不太一样。”固定像素尺寸的网页是匹配固定像素尺寸显示器的最简单办法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="流式布局中的百分比">
+<meta property="og:url" content="http://yoursite.com/2014/12/26/percentage-of-fluid-layout/index.html">
+<meta property="og:site_name" content="Clearives的博客">
+<meta property="og:description" content="曾经的表格布局可能大家都有点陌生了吧，其实我也是基本上没用过，自从web2.0的兴起，网站重构的思想，这让表格布局就这样消失了基本上，表格布局中有用到百分比布局的，在“表格布局”落下帷幕之后，基本上我们都是让网页固定为950-1000px，。如果布局使用了百分比宽度（如90%），耳边很快就能听到抱怨：“我的显示器上效果不太一样。”固定像素尺寸的网页是匹配固定像素尺寸显示器的最简单办法。">
+<meta property="og:updated_time" content="2016-06-16T03:39:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="流式布局中的百分比">
+<meta name="twitter:description" content="曾经的表格布局可能大家都有点陌生了吧，其实我也是基本上没用过，自从web2.0的兴起，网站重构的思想，这让表格布局就这样消失了基本上，表格布局中有用到百分比布局的，在“表格布局”落下帷幕之后，基本上我们都是让网页固定为950-1000px，。如果布局使用了百分比宽度（如90%），耳边很快就能听到抱怨：“我的显示器上效果不太一样。”固定像素尺寸的网页是匹配固定像素尺寸显示器的最简单办法。">
+  
+    <link rel="alternative" href="/atom.xml" title="Clearives的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://apps.bdimg.com/libs/zepto/1.0rc/zepto.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="/img/avtar.jpg" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Clearives</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">前端开发，移动开发，技术交流分享~</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/categories/前端开发/">前端开发</a></li>
+				        
+							<li><a href="/categories/移动开发/">移动开发</a></li>
+				        
+							<li><a href="/categories/设计交互/">设计交互</a></li>
+				        
+							<li><a href="/categories/个人随笔/">个人随笔</a></li>
+				        
+							<li><a href="/2015/03/02/focus-on-web/">关于博主</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/Clearives" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/" title="zhihu">zhihu</a>
+					        
+								<a class="twitter" target="_blank" href="https://twitter.com/clearives" title="twitter">twitter</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/css/" style="font-size: 17.5px;">css</a> <a href="/tags/css3/" style="font-size: 10px;">css3</a> <a href="/tags/html5/" style="font-size: 15px;">html5</a> <a href="/tags/ie/" style="font-size: 12.5px;">ie</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/事件/" style="font-size: 10px;">事件</a> <a href="/tags/前端工具/" style="font-size: 10px;">前端工具</a> <a href="/tags/面向对象/" style="font-size: 10px;">面向对象</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">喜欢摄影,热爱生活~</div>
+					<div id="js-weixin"><img src="/img/weixin.gif" alt="" width="150" height="150"/></div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Clearives</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<a herf="/" class="profilepic">
+				<img lazy-src="/img/avtar.jpg" class="js-avatar">
+			</a>
+			<hgroup>
+			  <h1 class="header-author">Clearives</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">前端开发，移动开发，技术交流分享~</p>
+			
+			<nav class="header-menu" style="display: none;">
+				<div id="js-menu">
+				
+					<a href="/archives">所有文章</a>
+		        
+					<a href="/categories/前端开发/">前端开发</a>
+		        
+					<a href="/categories/移动开发/">移动开发</a>
+		        
+					<a href="/categories/设计交互/">设计交互</a>
+		        
+					<a href="/categories/个人随笔/">个人随笔</a>
+		        
+					<a href="/2015/03/02/focus-on-web/">关于博主</a>
+		        
+		        <div class="clearfix"></div>
+				</div>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/Clearives" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/" title="zhihu">zhihu</a>
+			        
+						<a class="twitter" target="_blank" href="https://twitter.com/clearives" title="twitter">twitter</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-percentage-of-fluid-layout" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/26/percentage-of-fluid-layout/" class="article-date">
+  	<time datetime="2014-12-26T03:35:40.000Z" itemprop="datePublished">2014-12-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      流式布局中的百分比
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/移动开发/">移动开发</a>
+	</div>
+
+
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+	</div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>曾经的表格布局可能大家都有点陌生了吧，其实我也是基本上没用过，自从web2.0的兴起，网站重构的思想，这让表格布局就这样消失了基本上，表格布局中有用到百分比布局的，在“表格布局”落下帷幕之后，基本上我们都是让网页固定为950-1000px，。如果布局使用了百分比宽度（如90%），耳边很快就能听到抱怨：“我的显示器上效果不太一样。”固定像素尺寸的网页是匹配固定像素尺寸显示器的最简单办法。<br><a id="more"></a><br>随着移动互联网的发展，我们开始了对各种移动设备的适配，如果说针对每个版本的移动设备都用媒体查询去写一套样式，那是不是显得有点坑，确实坑，目前市面上的移动设备真是各种各样，分辨率也是奇出不穷，乱七八糟，但是，不要紧，我们还有百分比，百分比在移动网页的适配上得到了很好的体现。</p>
+<p>可能之前一直做web端的同学会疑惑，全部用百分比，我该怎么分配百分比啊，其实很简单，我们只要牢记一个公式就行：</p>
+<center>目标元素宽度÷上下文元素宽度=百分比宽度</center>
+
+<p>打个比方说吧，我们的网页body是1000px的，网站的主题打算使用960px居中的，那么我们的目标元素宽度就是960px，上下文宽度就是1000px，从而我们可以知道百分比宽度为96%。代码可以这样写：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;<span class="attribute">width</span>: <span class="number">1000px</span>;&#125;</span><br><span class="line"><span class="selector-tag">main</span>&#123;<span class="attribute">width</span>: <span class="number">96%</span>;<span class="attribute">margin</span>: <span class="number">0</span> auto;&#125;<span class="comment">/* 这里main区域的宽度就是960px */</span></span><br></pre></td></tr></table></figure></p>
+<p>不过好像很多web端的网站目前依然是固定像素布局的，百分比布局在移动端应用就非常明显了，响应式布局的流行，让它无处不在。</p>
+<p>下面我们来看一个移动页面的百分比布局：</p>
+<p>HTML代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"content"</span>&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"p1"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p3"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p4"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p5"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p6"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p7"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">    &lt;a href=<span class="string">""</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"p8"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>css代码:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>,<span class="selector-tag">body</span>&#123;<span class="attribute">width</span>:<span class="number">100%</span>; <span class="attribute">height</span>:<span class="number">100%</span>;<span class="attribute">background</span>: <span class="number">#191a1e</span>; <span class="attribute">margin</span>:<span class="number">0</span>; <span class="attribute">padding</span>:<span class="number">0</span>; <span class="attribute">overflow</span>:hidden; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">font-family</span>:Microsoft YaHei,Helvetica,Arial;&#125;</span><br><span class="line"><span class="selector-class">.content</span>&#123;<span class="attribute">padding</span>: <span class="number">5px</span>; <span class="attribute">height</span>:<span class="number">400px</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span>&#123;<span class="attribute">display</span>: block;<span class="attribute">margin</span>: <span class="number">0</span> <span class="number">1.5%</span> <span class="number">5px</span> <span class="number">0</span>;<span class="attribute">float</span>: left;<span class="attribute">text-decoration</span>: none;<span class="attribute">color</span>: <span class="number">#fff</span>;<span class="attribute">text-align</span>: center;<span class="attribute">border-radius</span>: <span class="number">4px</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:first-child</span>&#123;<span class="attribute">width</span>: <span class="number">49.25%</span>;<span class="attribute">height</span>: <span class="number">185px</span>;<span class="attribute">background</span>: <span class="number">#666</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(2)</span>&#123;<span class="attribute">width</span>: <span class="number">23.875%</span>;<span class="attribute">height</span>: <span class="number">80px</span>;<span class="attribute">background</span>: <span class="number">#00a698</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(3)</span>&#123;<span class="attribute">width</span>: <span class="number">23.875%</span>;<span class="attribute">height</span>: <span class="number">80px</span>;<span class="attribute">background</span>: <span class="number">#14ADE5</span>;<span class="attribute">margin-right</span>: <span class="number">0</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(4)</span>&#123;<span class="attribute">width</span>: <span class="number">49.25%</span>;<span class="attribute">height</span>: <span class="number">100px</span>;<span class="attribute">background</span>: <span class="number">#245433</span>;<span class="attribute">margin-right</span>: <span class="number">0</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(5)</span>&#123;<span class="attribute">width</span>: <span class="number">23.875%</span>;<span class="attribute">height</span>: <span class="number">80px</span>;<span class="attribute">background</span>: <span class="number">#14ADE5</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(6)</span>&#123;<span class="attribute">width</span>: <span class="number">23.875%</span>;<span class="attribute">height</span>: <span class="number">80px</span>;<span class="attribute">background</span>: <span class="number">#00a698</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(7)</span>&#123;<span class="attribute">width</span>: <span class="number">23.875%</span>;<span class="attribute">height</span>: <span class="number">80px</span>;<span class="attribute">background</span>: <span class="number">#00ff00</span>;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:nth-child(8)</span>&#123;<span class="attribute">width</span>: <span class="number">23.875%</span>;<span class="attribute">height</span>: <span class="number">80px</span>;<span class="attribute">background</span>: <span class="number">#1e7ec8</span>;<span class="attribute">margin-right</span>: <span class="number">0</span>;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>颜色是我随便填的，图好丑我就懒得截了，主要是来说一下里面的几个百分比，很明显我们整个网页的宽度就是100%，我们现在来说内容部分，.content部分是所有a元素的父元素，我们假设.content是100%，我们减去一个margin1.5%，分成2部分就是49.25%，然后右边再减去一个1.5%，分成2部分就是23.875%，下面一部分是4个拍在一行，就有3个margin1.5%，再分成三部分就是23.875%。对吧只要记住上面的公式，我们仔细点就能把百分比布局做好，其实就是要稍微做一些运算就好了。这样子得到的网页就任何大小的分辨率上都可以自适应了。这样就在适配上方便多了。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/06/prototype-proto/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          prototype和__proto__
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/12/05/background-size/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">background-size</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="percentage-of-fluid-layout" data-title="流式布局中的百分比" data-url="http://yoursite.com/2014/12/26/percentage-of-fluid-layout/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Clearives
+    	</div>
+      	<div class="footer-right">
+      		基于<a href="http://hexo.io/" target="_blank">Hexo</a> 构建，代码托管于<a href="https://github.com/Clearives" target="_blank">Github</a>图片托管于<a href="https://portal.qiniu.com" target="_blank">七牛云存储</a> by <a href="http://clearives.cc/" target="_blank">Clearives</a>
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/mobile.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>
