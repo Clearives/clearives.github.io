@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>background-size | Clearives的博客</title>
+  <title>数组的复制 | Clearives的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="css3中的background-size，我们都知道它可以用来设置2个值，一个是背景图的width,另一个是背景图的height,而他值的类型也可以有多种，这些值既可以是像素px，也可以是百分比%或auto，还可以是特定值cover, contain。">
+  <meta name="description" content="在使用JavaScript对数组进行操作的时候，我们经常需要将数组进行备份，事实证明如果只是简单的将它赋予其他变量，那么我们只要更改其中的任何一个，然后其他的也会跟着改变，这就导致了问题的发生。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="background-size">
-<meta property="og:url" content="http://yoursite.com/2014/12/05/background-size/index.html">
+<meta property="og:title" content="数组的复制">
+<meta property="og:url" content="http://yoursite.com/2016/11/25/array-copy/index.html">
 <meta property="og:site_name" content="Clearives的博客">
-<meta property="og:description" content="css3中的background-size，我们都知道它可以用来设置2个值，一个是背景图的width,另一个是背景图的height,而他值的类型也可以有多种，这些值既可以是像素px，也可以是百分比%或auto，还可以是特定值cover, contain。">
-<meta property="og:updated_time" content="2016-06-15T08:57:29.000Z">
+<meta property="og:description" content="在使用JavaScript对数组进行操作的时候，我们经常需要将数组进行备份，事实证明如果只是简单的将它赋予其他变量，那么我们只要更改其中的任何一个，然后其他的也会跟着改变，这就导致了问题的发生。">
+<meta property="og:updated_time" content="2017-02-23T13:13:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="background-size">
-<meta name="twitter:description" content="css3中的background-size，我们都知道它可以用来设置2个值，一个是背景图的width,另一个是背景图的height,而他值的类型也可以有多种，这些值既可以是像素px，也可以是百分比%或auto，还可以是特定值cover, contain。">
+<meta name="twitter:title" content="数组的复制">
+<meta name="twitter:description" content="在使用JavaScript对数组进行操作的时候，我们经常需要将数组进行备份，事实证明如果只是简单的将它赋予其他变量，那么我们只要更改其中的任何一个，然后其他的也会跟着改变，这就导致了问题的发生。">
   
     <link rel="alternative" href="/atom.xml" title="Clearives的博客" type="application/atom+xml">
   
@@ -187,11 +187,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-background-size" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-array-copy" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2014/12/05/background-size/" class="article-date">
-  	<time datetime="2014-12-05T02:54:40.000Z" itemprop="datePublished">2014-12-05</time>
+      <a href="/2016/11/25/array-copy/" class="article-date">
+  	<time datetime="2016-11-25T05:47:10.000Z" itemprop="datePublished">2016-11-25</time>
 </a>
     </div>
   
@@ -204,7 +204,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      background-size
+      数组的复制
     </h1>
   
 
@@ -219,7 +219,7 @@
 
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 	</div>
 
         <div class="clearfix"></div>
@@ -228,14 +228,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>css3中的background-size，我们都知道它可以用来设置2个值，一个是背景图的width,另一个是背景图的height,而他值的类型也可以有多种，这些值既可以是像素px，也可以是百分比%或auto，还可以是特定值cover, contain。<br><a id="more"></a></p>
-<h3 id="background-size可以设置2个值，1个为必填，1个为可选。"><a href="#background-size可以设置2个值，1个为必填，1个为可选。" class="headerlink" title="background-size可以设置2个值，1个为必填，1个为可选。"></a>background-size可以设置2个值，1个为必填，1个为可选。</h3><p>其中第1个值用于指定背景图的width，第2个值用于指定背景图的height，如果只给background-size设置1个值，则第2个值默认为auto高度自动 (通常默认高度是auto自动,自适用内容而增高,通常如果想高度自适应不用设置) （cover和contain特定值除外）。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123; </span><br><span class="line"><span class="attribute">background-image</span>:<span class="built_in">url</span>(1.jpg); </span><br><span class="line"><span class="attribute">background-repeat</span>:no-repeat; </span><br><span class="line"><span class="attribute">background-size</span>:<span class="number">100px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>等价于<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123; </span><br><span class="line"><span class="attribute">background-image</span>:<span class="built_in">url</span>(1.jpg); </span><br><span class="line"><span class="attribute">background-repeat</span>:no-repeat; </span><br><span class="line"><span class="attribute">background-size</span>:<span class="number">100px</span> auto; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="background-size的特定值："><a href="#background-size的特定值：" class="headerlink" title="background-size的特定值："></a>background-size的特定值：</h3><p>cover: 保持图像本身的宽高比例，将图片缩放到正好完全覆盖定义背景的区域；<br>contain: 保持图像本身的宽高比例，将图片缩放到宽度或高度正好适应定义背景的区域；<br>cover值：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123; </span><br><span class="line"><span class="attribute">background-image</span>:<span class="built_in">url</span>(1.png); </span><br><span class="line"><span class="attribute">background-repeat</span>:no-repeat; </span><br><span class="line"><span class="attribute">background-size</span>:cover; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>上面代码，背景图片将覆盖整个div区域。</p>
-<p>contain值：<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;span style=<span class="string">"color: #000000;"</span>&gt;div&#123; </span><br><span class="line"><span class="built_in">background</span>-<span class="built_in">image</span>:url(<span class="number">1.</span>png); </span><br><span class="line"><span class="built_in">background</span>-repeat:no-repeat; </span><br><span class="line"><span class="built_in">background</span>-<span class="built_in">size</span>:contain; </span><br><span class="line">&#125;  &lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
-<p>上面代码，背景图将缩放到宽度或高度的任意一边与div区域适应。</p>
-<p>只是简单的分析了一些参数的用法，具体在移动布局开发的时候我们经常会用到百分比来布局，大家可以多去尝试写写。</p>
+        <p>在使用JavaScript对数组进行操作的时候，我们经常需要将数组进行备份，事实证明如果只是简单的将它赋予其他变量，那么我们只要更改其中的任何一个，然后其他的也会跟着改变，这就导致了问题的发生。<br><a id="more"></a></p>
+<h3 id="直接赋值"><a href="#直接赋值" class="headerlink" title="直接赋值"></a>直接赋值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="keyword">var</span> arr2 = arr1</span><br><span class="line">arr2[<span class="number">1</span>] = <span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr1)   <span class="comment">//[1, 4, 3]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr2)   <span class="comment">//[1, 4, 3]</span></span><br></pre></td></tr></table></figure>
+<p>这样子直接将一个数组赋值给另一个数组,得到的数组,当我们对这个新数组进行某些操作的时候,我们会发现,它把源数组也给影响了,这并不是我们想要的,我们想要的是新数组的操作不影响源数组,所以问题就出现了,我们要怎么样才能达到深复制的效果呢。</p>
+<h3 id="slice函数"><a href="#slice函数" class="headerlink" title="slice函数"></a>slice函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="keyword">var</span> arr2 = arr1.slice(<span class="number">0</span>)</span><br><span class="line">arr2[<span class="number">1</span>] = <span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr1)   <span class="comment">//[1, 2, 3]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr2)   <span class="comment">//[1, 4, 3]</span></span><br></pre></td></tr></table></figure>
+<p>很明显,当我们改变arr2的时候,我们的arr1并没有发生改变,输出的依然是[1, 2, 3],arr1.slice(0)就是取得整个数组,返回一个新的数组,正好将整个数组复制了一般,得到的arr2是一个全新的数组,我们对其进行元素操作,并不会让源数组受到影响,所以这种方式达到了我们要的效果,也就是我们说的深复制。</p>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="keyword">var</span> arr2 = arr1.concat()</span><br><span class="line">arr2[<span class="number">1</span>] = <span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(arr1)   <span class="comment">//[1, 2, 3]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr2)   <span class="comment">//[1, 4, 3]</span></span><br></pre></td></tr></table></figure>
+<p>这里,我们也达到了深复制的效果,concat() 方法用于连接两个或多个数组,该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本,所以我们这样操作并不会影响到源数组,从而也实现了我们要的效果。</p>
+<p>其实,在我们的开发过程中,会有很多这样的场景,我们需要的是深复制,我们要的是新数组的改变不会改变源数组,我们其实只是想备份一个数组,上面两种方式都可以达到我们要的效果,所以可以试试。</p>
 
       
     </div>
@@ -245,18 +245,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/12/26/percentage-of-fluid-layout/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          流式布局中的百分比
-        
-      </div>
-    </a>
   
-  
-    <a href="/2014/12/03/css-centered-solution/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">css居中解决方案</div>
+    <a href="/2016/04/15/array-iterative-method/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数组的迭代方法</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -285,7 +276,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="background-size" data-title="background-size" data-url="http://yoursite.com/2014/12/05/background-size/"></div>
+	<div class="ds-thread" data-thread-key="array-copy" data-title="数组的复制" data-url="http://yoursite.com/2016/11/25/array-copy/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
