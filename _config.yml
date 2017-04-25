@@ -15,7 +15,7 @@ url: "http://clearives.cc" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-baseurl: /
+baseurl: http://clearives.cc
 permalink: /:title/
 
 disqus-shortname: clearives
