@@ -46,4 +46,31 @@ layout: default
           <!-- <a href="{{site.baseurl}}/page{{paginator.total_pages}}">Last</a> -->
       </div>
 
+
+
+
 </div>
+<!-- loading -->
+<div class="loading-wrap" id="loading">
+  <div class="loading">
+      <div><span></span></div>
+      <div><span></span></div>
+      <div><span></span></div>
+  </div>
+</div>
+<script>
+    var loading = document.getElementById('loading')
+    var sHeight = document.documentElement.clientHeight
+    loading.style.height = sHeight + 'px'
+    var isF = sessionStorage.getItem("isF")
+    if (isF != "f") {
+        window.onload = function() {
+            setTimeout(function() {
+                loading.style.display='none'
+                sessionStorage.setItem("isF", "f");
+            }, 3000)
+        }
+    } else {
+        loading.style.display='none'
+    }
+</script>
