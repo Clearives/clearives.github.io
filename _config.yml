@@ -9,7 +9,7 @@
 title: Clearives
 email: clearives@gmail.com
 description:
-baseurl: "http://clearives.cc" # the subpath of your site, e.g. /blog
+baseurl: http://clearives.cc/ # the subpath of your site, e.g. /blog
 url: "http://clearives.cc" # the base hostname & protocol for your site
 
 
