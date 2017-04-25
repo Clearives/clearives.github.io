@@ -15,7 +15,7 @@ url: "http://clearives.cc" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-baseurl: http://clearives.cc/
+baseurl: http://clearives.cc
 # baseurl: /clearives
 permalink: /:title/
 
