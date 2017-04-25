@@ -55,6 +55,7 @@ img{
     box-shadow: -2px 0px 0px 0px rgba(24, 228, 33, 0.22);
      @media screen and (max-width: $on-palm) {
          width: 100%;
+         padding: 0 20px 0 20px;
          border: none;
          box-shadow: none;
 
@@ -82,6 +83,9 @@ img{
 
 .post-list {
     list-style: none;
+    @media screen and (max-width: $on-palm) {
+        padding-left: 0;
+   }
 }
 
 .meny {
@@ -129,6 +133,7 @@ img{
 
 .pagination.post-pagination {
     float: right;
+    margin-right: 20px;
 }
 .page_number {
     margin-right: 15px;
