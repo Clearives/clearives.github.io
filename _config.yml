@@ -36,7 +36,8 @@ sass:
   style: compressed
 
 paginate: 10
-paginate_path: "/page:num"
+paginate_path: "page:num"
+# paginate_path: "/page:num"
 
 analytics: UA-83979019-1
 
