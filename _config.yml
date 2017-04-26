@@ -19,7 +19,7 @@ baseurl: http://clearives.cc
 # baseurl: /clearives
 permalink: /:title/
 
-disqus-shortname: clearives
+disqus-shortname: clearives-cc
 
 
 #compress.html
@@ -38,7 +38,6 @@ sass:
 
 paginate: 10
 paginate_path: "page:num"
-# paginate_path: "/page:num"
 
 analytics: UA-83979019-1
 
