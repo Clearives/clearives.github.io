@@ -14,4 +14,19 @@ layout: default
 </article>
 <br />
 <br />
-{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
+<div id="container"></div>
+<link rel="stylesheet" href="/css/default.css">
+<script src="/js/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  // id: '页面 ID', // 可选。默认为 location.href
+  owner: 'Clearives',
+  repo: 'git@github.com:Clearives/clearives.github.io.git',
+  oauth: {
+    client_id: '6f9f50fcf91b2dfc90a8',
+    client_secret: '44581ea0fd26a28aaecad8c00308e4bedcd08891',
+  },
+})
+gitment.render('container')
+</script>
+<!-- {% if site.disqus-shortname %}{% include disqus.html %}{% endif %} -->
