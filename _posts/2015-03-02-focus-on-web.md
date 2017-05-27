@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 专注前端开发
-subtitle: Jekyll is a blog-aware, static site generator in Ruby https://jekyllrb.com
 date: 2015-03-02 11:00:32
 author: clearives
 ---
 
 ![专注前端开发](http://7othoq.com1.z0.glb.clouddn.com/web.jpg "专注前端开发")
 
-欢迎大家来到[我的博客](http://clearives.github.io/)，最近手上没项目，看看自己原来的[博客](http://www.2ives.com/)也好久没更新了，刚好最近喜欢上了markdown，于是我就打算在Github上写博客了，用的是Hexo，部署过程很简单，很喜欢这种方式来写博客。
+欢迎大家来到[我的博客](http://clearives.cc/)，最近手上没项目，看看自己原来的[博客](http://www.2ives.com/)也好久没更新了，刚好最近喜欢上了markdown，于是我就打算在Github上写博客了，用的是Hexo，部署过程很简单，很喜欢这种方式来写博客。
 
 
 <!--more-->
@@ -45,6 +44,6 @@ Github: https://github.com/clearives
 
 ### 联系方式
 
-Email:　<a href="mailto:clearives@gmail.com">clearives@gmail.com</a>
-Weibo: [@曾祥辉_](http://weibo.com/clearives)  (欢迎关注~)
-QQ: 704219713
+- Email:　<a href="mailto:clearives@gmail.com">clearives@gmail.com</a>
+- Weibo: [@曾祥辉_](http://weibo.com/clearives)  (欢迎关注~)
+- QQ: 704219713
