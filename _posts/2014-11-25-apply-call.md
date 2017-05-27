@@ -9,7 +9,7 @@ author: clearives
 
 ### 方法定义
 
-#### call
+### call
 ```
 语法：call([thisObj[,arg1[, arg2[, [,.argN]]]]])
 ```
@@ -18,7 +18,7 @@ author: clearives
 call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。
 如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。
 
-#### apply
+### apply
 ```
 语法：apply([thisObj[,argArray]])
 ```

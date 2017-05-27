@@ -11,7 +11,7 @@ author: clearives
 
 <!--more-->
 
-#### 1、constructor
+### 1、constructor
 
 ```
     var arr = [1, 2, 3]
@@ -24,7 +24,7 @@ author: clearives
 
 ```
 
-#### 2、toString方法
+### 2、toString方法
 
 
 ```
@@ -40,7 +40,7 @@ author: clearives
 
 > 这里我们通过对象原型的toString方法,巧妙的判断出了哪个是对象,哪个是数组,而且这个方法几乎无缺陷。
 
-#### 3、instanceof
+### 3、instanceof
 
 ```
     var arr = [1, 2, 3]
@@ -54,7 +54,7 @@ author: clearives
 ```
 
 
-#### 4、length
+### 4、length
 
 正常情况下,我们可以通过length方法来判断,因为数组的length是number类型,而对象的length是undefined,所以可以判断,但是我们假设一下,一个对象里面有一个key值为length,而恰好它的值又是number类型,这就出问题了,所以我们一般不通过这种方法来区分数组还是对象。
 

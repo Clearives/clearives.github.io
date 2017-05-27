@@ -13,7 +13,7 @@ author: clearives
 
 <!--more-->
 原来的[博客](http://www.2ives.com/)一部分文章已经迁移过来,以后就是这个了。
-#### 关于博主
+### 关于博主
 
 ID:Clearives
 学历：本科
@@ -21,12 +21,13 @@ ID:Clearives
 职业：Html5,前端开发
 掌握技术：Html5,Css3,Javascript,React,Webpack,PS...
 个人站点：http://clearives.cc
+Github: https://github.com/clearives
 新浪微博：http://weibo.com/clearives
 目前居住：广东深圳
 
 我还是个菜鸟，但我觉得我们可以交流，本人热衷与前端开发技术，对这个领域的新技术很着迷，目前在研究MV*,如果你也一样热爱前端，我觉得我们可以成为朋友，当然不一样，也行哈~我这人热情，哈哈
 
-#### 个人项目
+### 个人项目
 
 <!--* [环球海淘商城](http://test.haitaotmall.com/)  (很遗憾这个项目快要上线了，就GG了~)-->
 * Small Cell微信DM
@@ -37,14 +38,12 @@ ID:Clearives
 * [Liveapp](http://liveapp.cn/)
 * [广告效果监测平台](http://t2.dataeye.com/pages/index.jsp?token=41a2e70b7a827b9bc2c4123b3adf3a752d40083fd8cc926bf0e26580b8ea471d)
 * [Splus官网](http://splus.cn/)
+* [cc-admin](http://clearives.cc/project/cc-admin/index.html?mock#/dashboard)
 我知道这些可能不值得一提，但是不要紧，要看项目情况的可以找我。
 
-```
-console.log(1)
-```
 
 
-#### 联系方式
+### 联系方式
 
 Email:　<a href="mailto:clearives@gmail.com">clearives@gmail.com</a>
 Weibo: [@曾祥辉_](http://weibo.com/clearives)  (欢迎关注~)

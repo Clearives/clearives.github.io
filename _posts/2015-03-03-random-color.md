@@ -10,7 +10,7 @@ author: clearives
 
 <!--more-->
 
-#### 16进制形式
+### 16进制形式
 
 ```
 function randomColor(){
@@ -28,7 +28,7 @@ function randomColor(){
 }
 ```
 
-#### RGB形式
+### RGB形式
 
 ```
 function randomColor(){
