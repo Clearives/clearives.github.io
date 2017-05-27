@@ -16,6 +16,8 @@ Vue推荐在构建大型应用时基于组件方式开发，使用组件意味�
 
 <!--more-->
 
+
+
 #### 1、父组件 -> 子组件
 
 > 父组件可以通过props与子组件通信
@@ -102,8 +104,8 @@ Vue推荐在构建大型应用时基于组件方式开发，使用组件意味�
     //这里我们创建一个桥接vue实例，然后一个组件上$emit,一个组件上$on,这样就可以达到非相关组件直接通信了
 
 ```
-> [vue2中箭头函数的使用注意](https://github.com/Clearives/clearives.github.io/issues/3)
+> [vue2中箭头函数的使用注意](https://github.com/Clearives/clearives.github.io/issues/3?_blank)
 
-目前基本上就这三种情况，上面的示例代码可能不能直接运行，可以参考一下，大家也可以在我的[github](https://github.com/Clearives/cc-admin)上看,[Demo示例链接](http://clearives.cc/project/cc-admin/index.html?mock#/collection/communication),欢迎指正。
+目前基本上就这三种情况，上面的示例代码可能不能直接运行，可以参考一下，大家也可以在我的[github](https://github.com/Clearives/cc-admin?_blank)上看,[Demo示例链接](http://clearives.cc/project/cc-admin/index.html?mock#/collection/communication?_blank),欢迎指正。
 
-在这里推荐一篇相关文章：[Understanding Components Communication in Vue 2.0](http://taha-sh.com/blog/understanding-components-communication-in-vue-20)
+在这里推荐一篇相关文章：[Understanding Components Communication in Vue 2.0](http://taha-sh.com/blog/understanding-components-communication-in-vue-20?_blank)
