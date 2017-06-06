@@ -22,7 +22,7 @@ author: clearives
 ### 1、构造上传策略：
 
 ```js
-putPolicy = {
+let putPolicy = {
   scope: config.bucket_name,
   deadline:new Date().getTime() + 3600,
   returnBody = `{
@@ -42,7 +42,7 @@ putPolicy = {
 
 
 ```js
-    let put_policy = JSON.stringify(putPolicy);
+let put_policy = JSON.stringify(putPolicy);
 ```
 这里就是Json操作，转成字符串。
 
@@ -52,16 +52,16 @@ putPolicy = {
 > 这里用到了urlsafeBase64Encode和base64ToUrlSafe，可以参考代码。
 
 ```js
-    let encoded = urlsafeBase64Encode(put_policy)
+let encoded = urlsafeBase64Encode(put_policy)
 
-    let urlsafeBase64Encode = function(jsonFlags) {
-      let encoded = new Buffer(jsonFlags).toString('base64')
-      return base64ToUrlSafe(encoded);
-    }
+let urlsafeBase64Encode = function(jsonFlags) {
+  let encoded = new Buffer(jsonFlags).toString('base64')
+  return base64ToUrlSafe(encoded);
+}
 
-    let base64ToUrlSafe = function(v) {
-      return v.replace(/\//g, '_').replace(/\+/g, '-')
-    }
+let base64ToUrlSafe = function(v) {
+  return v.replace(/\//g, '_').replace(/\+/g, '-')
+}
 
 ```
 
@@ -81,7 +81,7 @@ let hmacSha1 = function(encoded, secretKey) {
 ### 5、对签名进行URL安全的Base64编码：
 
 ```js
-  let _encoded_signed = base64ToUrlSafe(encoded_signed)
+let _encoded_signed = base64ToUrlSafe(encoded_signed)
 ```
 
 ### 6、将访问密钥（AK/SK）、_encoded_signed 和 encoded 用英文符号 : 连接起来：
@@ -98,7 +98,7 @@ upload_token = 'ctW4bSXWrUuEa_ztjW6bCG9GmpuWA0m-3L7uc83r:8ns6ppdFo5t_wtJylM0y4NB
 
 有了token之后我们就可以发请求了，我这里先用了饿了么的上传组件，配置如下：
 
-```vue
+```js
 <el-upload
   class="avatar-uploader"
   action="http://up-z2.qiniu.com/"
