@@ -104,6 +104,6 @@ Vue推荐在构建大型应用时基于组件方式开发，使用组件意味�
 ```
 > <a href="https://github.com/Clearives/clearives.github.io/issues/3" target="_blank">vue2中箭头函数的使用注意</a>
 
-目前基本上就这三种情况，上面的示例代码可能不能直接运行，可以参考一下，大家也可以在我的<a href="https://github.com/Clearives/cc-admin" target="_blank">github</a>上看,<a href="http://clearives.cc/project/cc-admin/index.html?mock#/collection/communication" target="_blank">Demo示例链接</a>,欢迎指正。
+目前基本上就这三种情况，上面的示例代码可能不能直接运行，可以参考一下，大家也可以在我的<a href="https://github.com/Clearives/cc-admin" target="_blank">github</a>上看,<a href="http://clearives.cc/project/cc-admin/index.html#/collection/communication" target="_blank">Demo示例链接</a>,欢迎指正。
 
 在这里推荐一篇相关文章：<a href="http://taha-sh.com/blog/understanding-components-communication-in-vue-20" target="_blank">Understanding Components Communication in Vue 2.0</a>
