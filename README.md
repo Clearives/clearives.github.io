@@ -33,6 +33,7 @@
 - <a class="post-link" href="http://clearives.cc/ie6-bug/">IE6常见bug详细汇总</a>
 - <a class="post-link" href="http://clearives.cc/let-ie6-ie7-ie8-support-css3/">让IE6支持css3，让 IE7、IE8 都支持CSS3</a>
 - <a class="post-link" href="http://clearives.cc/qiniu-upload/">vue使用七牛上传</a>
+- <a class="post-link" href="http://clearives.cc/livereload/">Live​Reload实时刷新网页</a>
 
 
 ### 联系方式
