@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>interview</title>
+</head>
+<body>
+<script>
+    // JavaScript深入之从原型到原型链
+    function Person() {
+
+    }
+    Person.prototype.name = 'Clearives'
+    var person1 = new Person()
+    var person2 = new Person()
+    console.log(person1.name) // Clearives
+    console.log(person2.name) // Clearives
+    console.log(person1.__proto__ === Person.prototype) // true
+    console.log(Person.prototype.constructor === Person) // true
+</script>
+</body>
+</html>
