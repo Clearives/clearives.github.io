@@ -7,14 +7,34 @@
 <body>
 <script>
     // 执行上下文
-    let ecFun = (i) => {
-        if (i === 3) {
-            return false
-        }
-        ecFun(i + 1)
-        console.log(i)
+    // let ecFun = (i) => {
+    //     if (i === 3) {
+    //         return false
+    //     }
+    //     ecFun(i + 1)
+    //     console.log(i)
+    // }
+    // ecFun(0)    // 2, 1, 0
+    debugger
+    console.log(x);
+    var x = 10;
+
+    console.log(x);
+    x = 20;
+
+    function x() {
     }
-    ecFun(0)    // 2, 1, 0
+
+    console.log(x);
+
+    if (true) {
+        var a = 1;
+    } else {
+        var b = true;
+    }
+
+    console.log(a);
+    console.log(b);
 </script>
 </body>
 </html>
