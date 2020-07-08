@@ -18,11 +18,11 @@ classify: true
 - 学历：本科
 - 爱好：摄影
 - 职业：Html5,前端开发
-- 掌握技术：Html5,Node,Javascript,React,Webpack,PS...
+- 掌握技术：Html5,Node,Javascript,React,Taro,Vue,Webpack,PS...
 - 个人站点：https://clearives.cc
 - Github：https://github.com/Clearives
 - 博客页面源码：https://github.com/Clearives/clearives.github.io
-- 博客源码：https://github.com/Clearives/blog
+- 博客源码：https://github.com/Clearives/clearives.github.io/tree/docs
 - 目前居住：广东深圳
 
 我还是个菜鸟，但我觉得我们可以交流，本人热衷前端开发技术，对这个领域的新技术很感兴趣，目前在后海一家P2P公司上班,如果你也一样热爱前端，我觉得我们可以成为朋友，当然不一样，也行哈~我这人热情，哈哈
