@@ -1,0 +1,25 @@
+{
+  "name": "clearives.cc-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/vuepress dev ./",
+    "build": "./node_modules/.bin/vuepress build .",
+    "deploy": "bash deploy.sh"
+  },
+  "keywords": [],
+  "author": "clearives",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^1.0.2",
+    "vuepress-plugin-comment": "^0.5.4",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-pwa": "^1.0.0-rc.1"
+  },
+  "devDependencies": {
+    
+  }
+}
