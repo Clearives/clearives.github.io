@@ -1,6 +1,6 @@
 
 const sideBarUtil = require('./sideBarUtil')
-// sideBarUtil.findSyncFolderName('./node')
+// sideBarUtil.renderSidebarConfig('../../package')
 
 module.exports = {
     sideBarUtil

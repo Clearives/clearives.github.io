@@ -3,10 +3,6 @@ module.exports = {
         key: 1,
         value: '学习笔记'
     },
-    'framework': {
-        key: 2,
-        value: '框架学习'
-    },
     'js': {
         key: 3,
         value: 'Javascript'
@@ -14,5 +10,9 @@ module.exports = {
     'css': {
         key: 4,
         value: 'Css'
+    },
+    'react': {
+        key: 5,
+        value: 'React'
     },
 }

@@ -49,11 +49,11 @@ const me = [
     'about',
     'timeline'
 ]
-
 module.exports = {
     '/f2e/': helper.sideBarUtil.renderSidebarConfig('f2e'),
     '/node/': helper.sideBarUtil.renderSidebarConfig('node'),
     '/dailyRecord/': helper.sideBarUtil.renderSidebarConfig('dailyRecord'),
     '/tech/': helper.sideBarUtil.renderSidebarConfig('tech'),
     '/me/': helper.sideBarUtil.renderSidebarConfig('me'),
+    '/package/': helper.sideBarUtil.renderSidebarConfig('package'),
 }

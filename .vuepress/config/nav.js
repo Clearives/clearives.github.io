@@ -7,24 +7,12 @@ module.exports = [{
         link: '/frontend/'
     },
     {
-        text: 'Node-js',
+        text: 'Nodejs',
         link: '/node/'
     },
     {
-        text: '框架学习',
-        items: [{
-                text: 'React',
-                link: '/react/'
-            },
-            {
-                text: 'Vue',
-                link: '/vue/'
-            },
-            {
-                text: '其它',
-                link: '/other/'
-            }
-        ]
+        text: '前端框架',
+        link: '/package/'
     },
     {
         text: '日记本',
