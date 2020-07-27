@@ -10,7 +10,7 @@ footer: Copyright © 2016-present clearives.cc
 
 - [JS遍历](https://clearives.cc/page/js-traversing/)
 - [vue使用七牛上传](https://clearives.cc/page/2017-06-06-qiniu-upload/)
-- [浏览器拦截弹出的新窗口问题](https://clearives.cc/browser-window-open-intercept/)
+- [浏览器拦截弹出的新窗口问题](https://clearives.cc/page/browser-window-open-intercept/)
 
 ## 🤖 NodeJs [🔗](https://clearives.cc/node/)
 
