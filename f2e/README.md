@@ -22,3 +22,5 @@ comment: false
 
 
 ### 其它
+- [浏览器拦截弹出的新窗口问题](https://clearives.cc/page/browser-window-open-intercept/)
+- [微信小程序保存base64图片到本地](https://clearives.cc/page/weapp-save-base64/)
