@@ -11,6 +11,7 @@ comment: false
 
 ### React
 - [mobx使用小记](/page/mobx-use-record/)
+- [react向组件传递函数方式](/page/react-func-pass/)
 
 
 ### Vue

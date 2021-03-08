@@ -10,6 +10,7 @@ comment: false
 
 
 ### JavaScript
+- [使用Taro开发小程序遇到的问题与解决方案](https://clearives.cc/page/taro-practice-summary/)
 - [JS遍历](https://clearives.cc/page/js-traversing/)
 - [vue使用七牛上传](https://clearives.cc/page/2017-06-06-qiniu-upload/)
 - [Live​Reload实时刷新网页](https://clearives.cc/page/2017-06-23-livereload/)

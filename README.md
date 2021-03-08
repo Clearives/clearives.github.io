@@ -8,7 +8,7 @@ footer: Copyright © 2016-present clearives.cc
 
 ## 👨‍💻 前端知识 [🔗](https://clearives.cc/frontend/)
 
-- [JS遍历](https://clearives.cc/page/js-traversing/)
+- [使用Taro开发小程序遇到的问题与解决方案](https://clearives.cc/page/taro-practice-summary/)
 - [vue使用七牛上传](https://clearives.cc/page/2017-06-06-qiniu-upload/)
 - [浏览器拦截弹出的新窗口问题](https://clearives.cc/page/browser-window-open-intercept/)
 
@@ -23,6 +23,7 @@ footer: Copyright © 2016-present clearives.cc
 ## 🚀 技术文章
 
 - [Github Pages](https://clearives.cc/page/github-pages/)
+- [docker note](https://clearives.cc/page/docker-note/)
 
 
 ## 👨‍🌾 其他
