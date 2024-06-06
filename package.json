@@ -1,5 +1,5 @@
 {
-  "name": "clearives.cc-blog",
+  "name": "clearives.github.io-blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,5 @@
     "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-pwa": "^1.0.0-rc.1"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }
