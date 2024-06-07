@@ -10,12 +10,12 @@ comment: false
 
 ## 笔记
 
-- [异步和事件触发](https://clearives.github.io/page/Asynchronous-and-event-loops/)
-- [module.exports 和 exports 的区别](https://clearives.github.io/page/module.exports-and-exports/)
-- [多异步协作](https://clearives.github.io/page/Multiple-asynchronous-collaboration/)
+- [异步和事件触发](/page/Asynchronous-and-event-loops/)
+- [module.exports 和 exports 的区别](/page/module.exports-and-exports/)
+- [多异步协作](/page/Multiple-asynchronous-collaboration/)
 
 ## 框架学习
 
-- [BASE64 加/解密](https://clearives.github.io/page/BASE64-encryption-decryption/)
+- [BASE64 加/解密](/page/BASE64-encryption-decryption/)
 
 ## 其它

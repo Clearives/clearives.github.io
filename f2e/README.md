@@ -10,18 +10,18 @@ comment: false
 
 ### JavaScript
 
-- [使用 Taro 开发小程序遇到的问题与解决方案](https://clearives.github.io/page/taro-practice-summary/)
-- [JS 遍历](https://clearives.github.io/page/js-traversing/)
-- [vue 使用七牛上传](https://clearives.github.io/page/2017-06-06-qiniu-upload/)
-- [Live​Reload 实时刷新网页](https://clearives.github.io/page/2017-06-23-livereload/)
-- [如何区分是对象还是数组](https://clearives.github.io/page/array-and-object/)
-- [数组的复制](https://clearives.github.io/page/array-clone/)
+- [使用 Taro 开发小程序遇到的问题与解决方案](/page/taro-practice-summary/)
+- [JS 遍历](/page/js-traversing/)
+- [vue 使用七牛上传](/page/2017-06-06-qiniu-upload/)
+- [Live​Reload 实时刷新网页](/page/2017-06-23-livereload/)
+- [如何区分是对象还是数组](/page/array-and-object/)
+- [数组的复制](/page/array-clone/)
 
 ### Css
 
-- [自动颜色获取](https://clearives.github.io/page/autocolor/)
+- [自动颜色获取](/page/autocolor/)
 
 ### 其它
 
-- [浏览器拦截弹出的新窗口问题](https://clearives.github.io/page/browser-window-open-intercept/)
-- [微信小程序保存 base64 图片到本地](https://clearives.github.io/page/weapp-save-base64/)
+- [浏览器拦截弹出的新窗口问题](/page/browser-window-open-intercept/)
+- [微信小程序保存 base64 图片到本地](/page/weapp-save-base64/)
